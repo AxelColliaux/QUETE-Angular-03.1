@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '03-Directives';
+  title:string = '03-Directives';
+  isAdmin:boolean = true;
+
+  isVisible(){
+    this.isAdmin = !this.isAdmin;
+  }
 }
